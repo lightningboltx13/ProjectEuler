@@ -1,0 +1,37 @@
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+_______________________________________________________________
+
+
+
+only looking at the prime numbers up to 20
+
+if this is true then for the example (2520:1 to 10) then you only need the primes up to 10
+[2,3,5,7]
+you also need an squared of these numbers that are within the 1 to 10 range
+2^2
+
+predict you need 9.
+
+
+2*4*5*7*9=2520 or 9*8*7*5
+
+Needed Prime Numbers and the Largest Exponent of Primes that is within range. If the Prime has an exponent within range remove that prime.
+Example
+2^3 = 8; which is within the 1 to 10 range. so we use the 8 instead of the 2.
+3^2 = 9; which is within the 1 to 10 range. se we use the 9 instead of the 3.
+
+Product = 1;
+Prime = [2,3,5,7,11,13,17,19]
+
+for(int Index = 0; Index < Prime.length; Index++;)
+	if(Prime[Index]^n <= 20)
+		Product *= Prime^n
+
+16,9,5,7,11,13,17,19
+
+
+this problem was solved less with code and more with math, creating a method that allows you to imput a range of integers and find the smallest divisable by all numbers within the range is the next step.
+
+232,792,560‬ is the answer

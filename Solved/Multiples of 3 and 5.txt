@@ -1,0 +1,32 @@
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+_______________________________________________________________________
+
+
+
+Notes:
+
+3,5,6,9,10,12,15*,18,20,21,24,25,27,30**,
+1,1,2,3, 2, 3,3&5, 6, 4, 7, 8, 5, 9,10&6, 
+
+
+//Sum is the total of all multiples of 3 and 5 below 1000
+int Sum = 0;
+//x is the number that is multipled by 3 & 5 to create the multiples
+int x = 0;
+while((x*3) < 1000)
+{
+	if((x*3)%15 != 0) 
+		Sum += x*3;
+		
+	if((x*5)%15 != 0)) 
+		if(x*5 < 1000)
+			Sum += x*5;
+
+	if((x*15) < 1000)
+		Sum += x*15;
+	
+	x++;
+}
+System.out.println("Total Sum:" + Sum)
